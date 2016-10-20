@@ -40,8 +40,8 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
     public static final String CREATE_CITY = "CREATE TABLE City("
             + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
             + "city_name TEXT ,"
-            + "city_code TEXT"
-            + "province_code INTEGER)";
+            + "city_code TEXT,"
+            + "province_id INTEGER)";
 
     /**
      * County创建表语句（县）
@@ -49,6 +49,6 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
     public static final String CREATE_COUNTY = "CREATE TABLE County("
             + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
             + "county_name TEXT ,"
-            + "county_code TEXT"
+            + "county_code TEXT,"
             + "city_id INTEGER)";
 }
